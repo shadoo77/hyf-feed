@@ -1,0 +1,274 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/* table styles */
+#houses-table {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#houses-table td, #houses-table th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#houses-table tr:nth-child(even){background-color: #f2f2f2;}
+
+#houses-table tr:hover {background-color: #ddd;}
+
+#houses-table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: #4CAF50;
+  color: white;
+  position: -webkit-sticky;
+  position: sticky;
+  /*top: 130px;*/
+}
+#logo {
+  font-weight: bold;
+  text-align: center;
+  margin-left: 30px;
+  height: 250px;
+  transition: 0.7s;
+}
+#logo h1 {
+  margin-top: 25px;
+}
+#logo img {
+  width: 300px;
+  height: auto;
+  transition: 0.7s;
+}
+.header {
+  margin-top: 20px;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  background-color: #fff;
+}
+.header::after { 
+  content: "";
+  display: block; 
+  clear: both;
+}
+.header-content {
+  height: 100%;
+  position: relative;
+}
+
+/*  Nav menu  %%%%%%%%%%%%%%%%%%%%% */
+ul.navmenu {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+ul.navmenu li {
+  float: none;
+}
+
+ul.navmenu li .link {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: 0.7s;
+}
+
+/* ul.navmenu li .link:hover {
+  background-color: #111;
+} */
+
+ul.navmenu li .link:hover, .active {
+  background-color: #4CAF50;
+}
+
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+
+.form-report.hidden {
+  visibility: hidden;
+}
+/* #upload-file {
+  opacity: 0;
+  position: absolute;
+  z-index: -1;
+} */
+.upload-label {
+  cursor: pointer;
+}
+/*&&&&&&&&&&&&&&&&&&&&&*/
+
+.error-item {
+  background-color: rgb(226, 190, 190);
+  color: rgb(100, 28, 28);
+  font-weight: 400
+}
+
+/* Single house &&&&&&&&&&&&&&&&&&&*/
+.single-house-container {
+  margin: 20px auto;
+}
+.single-house-container hr {
+  margin: 25px 0;
+  border: 3px solid rgb(50, 90, 50);
+  border-radius: 5px;
+}
+.single-house-container .row, .single-house-container .col-sm-6 {
+  margin: 12px 0;
+}
+.custom-tag {
+  max-width: 100%;
+  height: 100%;
+}
+.custom-tag img {
+  max-width: 100%;
+  height: auto;
+}
+.modal-image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.modal-content {
+  display:inline-block;
+  width: 100%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, 0%);
+}
+.modal-dialog{
+  text-align:center;
+  
+}
+.modal-body {
+  position: relative;
+  overflow-y: auto;
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 100%;
+  padding: 5px;
+}
+/********************* Footer */
+footer {
+  background-color: #282c2f;
+}
+footer img {
+  display: inline-block;
+  margin: 0 auto;
+  width: 320px;
+  height: auto;
+}
+footer .card {
+  background-color: transparent !important;
+  color: rgb(202, 200, 200);
+  font-size: 14px;
+  border: none;
+}
+.footer-logo .card-text p {
+  text-align: center
+}
+footer .card-title {
+  color: #fff;
+  text-align: left;
+}
+footer .card-body p {
+  text-align: left;
+}
+footer .fas, footer .fab {
+  font-size: 26px;
+  margin-right: 18px;
+}
+footer .contact-wraper {
+  margin: 10px 0;
+}
+footer .contact-wraper::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.foo-contact-icons, .foo-contact-info {
+  float: left;
+}
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+@media screen and (min-width: 480px) {
+  ul.navmenu li {float: left;}
+  #logo {
+    text-align: left;
+    margin-left: 30px;
+    margin-bottom: 10px;
+    height: 170px;
+  }
+  
+  #logo img {
+    height: auto;
+    transition: 0.7s;
+  }
+  .site-container {
+    width: 85%;
+    margin: auto;
+  }
+  .modal-image {
+    display: block;
+    width: auto;
+    max-height: 100%;
+  }
+  .modal-content {
+    width: auto;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, 0%);
+  }
+  .modal-body {
+    width: auto;
+    height: auto;
+    max-height: 100%;
+    padding: 15px;
+  }
+  .custom-tag {
+    background: black;
+  }
+  footer img {
+    width: 400px;
+  }
+}
